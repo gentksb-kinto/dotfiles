@@ -29,4 +29,3 @@ link_to_homedir() {
 }
 
 link_to_homedir
-exec $SHELL -l
