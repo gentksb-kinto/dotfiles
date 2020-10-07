@@ -1,0 +1,5 @@
+[user]
+	name = gentksb
+	email = gen.takashiba@kinto-jp.com
+[core]
+	excludesfile = /home/gen/.gitignore_global
