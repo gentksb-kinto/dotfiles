@@ -14,7 +14,7 @@ sudo ./aws/install
 
 # ssm-sessionをインストール
 curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm" -o "session-manager-plugin.rpm"
-cp ../module/ssm-session /usr/bin/
+cp ./module/ssm-session /usr/bin/
 
 # node & awsp
 sudo apt install -y nodejs npm
