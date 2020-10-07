@@ -19,7 +19,8 @@ cp ./module/ssm-session /usr/bin/
 echo "ssm-session tool installed!"
 
 # node & awsp
-DEBIAN_FRONTEND=noninteractive sudo apt install -y nodejs npm
+curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
+sudo apt install -y nodejs npm
 sudo npm install n -g
 sudo n lts
 sudo apt purge -y nodejs npm
