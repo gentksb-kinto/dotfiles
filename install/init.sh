@@ -6,6 +6,7 @@ sudo apt -y update
 sudo apt -y install jq
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
+echo "jq and fzf installed!"
 
 # aws cli2
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -15,9 +16,10 @@ sudo ./aws/install
 # ssm-sessionをインストール
 curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm" -o "session-manager-plugin.rpm"
 cp ./module/ssm-session /usr/bin/
+echo "ssm-session tool installed!"
 
 # node & awsp
-sudo apt install -y nodejs npm
+DEBIAN_FRONTEND=noninteractive sudo apt install -y nodejs npm
 sudo npm install n -g
 sudo n lts
 sudo apt purge -y nodejs npm
