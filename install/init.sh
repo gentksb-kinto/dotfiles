@@ -15,6 +15,7 @@ sudo ./aws/install
 
 # ssm-sessionをインストール
 curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/linux_64bit/session-manager-plugin.rpm" -o "session-manager-plugin.rpm"
+sudo dpkg -i session-manager-plugin.deb
 cp ./module/ssm-session /usr/bin/
 echo "ssm-session tool installed!"
 
