@@ -15,4 +15,4 @@ jobs:
       - name: Install dotfiles
         run: ./install/install.sh install
       - name: Test command
-        run: aws --version && node -v
+        run: aws --version && node -v && npm -v
