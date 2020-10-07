@@ -1,0 +1,13 @@
+### all ignore ###
+/*
+/.**
+
+### not ignore ###
+!/.github/**
+!/module/**
+!/install/**
+!/.gitignore_global
+!/.gitconfig
+!/README.md
+!.gitignore
+!/.bashrc
