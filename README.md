@@ -2,7 +2,7 @@
 
 dotfiles
 
-![init script test](https://github.com/gentksb-kinto/dotfiles/workflows/ubuntu/badge.svg)
+![init script test](https://github.com/gentksb-kinto/dotfiles/workflows/UbuntuCI/badge.svg)
 
 ## How to use
 
