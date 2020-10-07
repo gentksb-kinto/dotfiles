@@ -13,6 +13,6 @@ jobs:
       - name: Install init packeges
         run: ./install/init.sh
       - name: Install dotfiles
-        run: ./install/install.sh
+        run: ./install/install.sh && exec $SHELL -l
       - name: Test command
         run: aws --version && node -v && npm -v && session-manager-plugin && tfenv -h
