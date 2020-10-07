@@ -20,9 +20,9 @@ echo "ssm-session tool installed!"
 
 # node & awsp
 curl -sL https://deb.nodesource.com/setup_lts.x | sudo -E bash -
-sudo apt install -y nodejs npm
+sudo apt install -y nodejs
 sudo npm install n -g
 sudo n lts
-sudo apt purge -y nodejs npm
+sudo apt purge -y nodejs
 exec $SHELL -l
 sudo npm install awsp -g
