@@ -9,10 +9,10 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install required base packege
-        run: apt-get update && apt-get install -y git sudo curl unzip source
+        run: apt-get update && apt-get install -y git sudo curl unzip
       - name: Install init packeges
         run: ./install/init.sh
       - name: Install dotfiles
         run: ./install/install.sh
       - name: Test command
-        run: source ~/.bashrc && aws --version && node -v && npm -v && session-manager-plugin && tfenv -h
+        run: aws --version && node -v && npm -v && session-manager-plugin

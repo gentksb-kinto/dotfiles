@@ -2,6 +2,8 @@
 
 dotfiles
 
+![init script test](https://github.com/gentksb-kinto/dotfiles/workflows/ubuntu/badge.svg)
+
 ## How to use
 
 Initial setup
