@@ -9,9 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install required base packege
-        run: apt-get update && apt-get install -y git sudo curl unzip tzdata
+        run: apt-get update && apt-get install -y git sudo curl unzip
       - name: Install init packeges
         run: ./install/init.sh
+        env:
+          DEBIAN_FRONTEND: noninteractive
       - name: Install dotfiles
         run: ./install/install.sh install
       - name: Test command
