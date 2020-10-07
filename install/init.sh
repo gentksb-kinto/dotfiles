@@ -27,3 +27,6 @@ sudo n lts
 sudo apt purge -y nodejs
 exec $SHELL -l
 sudo npm install awsp -g
+
+# tfenv
+git clone https://github.com/tfutils/tfenv.git ~/.tfenv

@@ -15,4 +15,4 @@ jobs:
       - name: Install dotfiles
         run: ./install/install.sh
       - name: Test command
-        run: aws --version && node -v && npm -v && session-manager-plugin
+        run: aws --version && node -v && npm -v && session-manager-plugin && tfenv -h
