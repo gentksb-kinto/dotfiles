@@ -11,6 +11,6 @@ jobs:
       - name: Install required base packege
         run: apt-get update && apt-get install -y git sudo
       - name: Install init packeges
-        run: .install/init.sh
+        run: ./install/init.sh
       - name: Install dotfiles
-        run: .install/install.sh install
+        run: ./install/install.sh install
