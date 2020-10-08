@@ -2,4 +2,4 @@
 	name = gentksb
 	email = gen@gensobunya.net
 [core]
-	excludesfile = /home/gen/.gitignore_global
+	excludesfile = $HOME/.gitignore_global
