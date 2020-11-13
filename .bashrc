@@ -144,3 +144,10 @@ alias restart='exec $SHELL -l'
 # terraform parallel
 export TF_CLI_ARGS_plan="--parallelism=30"
 export TF_CLI_ARGS_apply="--parallelism=30"
+
+# aws_vault
+
+export AWS_VAULT_PASS_PREFIX=aws-vault
+export AWS_SESSION_TOKEN_TTL=12h
+export AWS_VAULT_BACKEND=pass
+export GPG_TTY=$(tty)
