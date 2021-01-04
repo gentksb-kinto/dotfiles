@@ -9,6 +9,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 echo "jq and fzf installed!"
 
 # aws cli2
+sudo apt -y unzip
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
 unzip awscliv2.zip
 sudo ./aws/install
