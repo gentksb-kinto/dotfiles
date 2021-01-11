@@ -11,3 +11,9 @@
 
 # env
 .env*
+
+# Mac
+.DS_STORE
+
+# Win
+Thumbs.db
