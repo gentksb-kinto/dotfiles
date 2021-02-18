@@ -1,6 +1,6 @@
 # dotfiles
 
-dotfiles
+dotfiles, mostly for Ubuntu
 
 ![init script test](https://github.com/gentksb-kinto/dotfiles/workflows/UbuntuCI/badge.svg)
 
