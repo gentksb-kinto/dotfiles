@@ -9,6 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Install required base packege
-        run: apt-get update && apt-get install -y git sudo curl unzip
+        run: apt-get update
       - name: Install dotfiles
         run: ./install.sh

@@ -1,18 +1,6 @@
 #!/usr/bin/env bash
 set -ue
 
-sudo apt -y update
-sudo apt -y install jq
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install
-echo "jq and fzf installed!"
-
-# ssm-sessionをインストール
-curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/ubuntu_64bit/session-manager-plugin.deb" -o "session-manager-plugin.deb"
-sudo dpkg -i session-manager-plugin.deb
-cp ./module/ssm-session /usr/bin/
-echo "ssm-session tool installed!"
-
 link_to_homedir() {
   command echo "backup old dotfiles..."
   if [ ! -d "$HOME/.dotbackup" ];then
