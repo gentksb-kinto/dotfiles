@@ -116,31 +116,15 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export PATH=/usr/local/bin/aws_completer:$PATH
-complete -C '/usr/local/bin/aws_completer' aws
-
 # disable lock
 stty stop undef
-
-# aws profile switcher
-alias awsp="source _awsp"
 
 # tabtab source for packages
 # uninstall by removing these lines
 [ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
-
-# tfenv
-export PATH="$HOME/.tfenv/bin:$PATH"
-
-# fzf
-[ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 # direnv
 eval "$(direnv hook bash)"
 
 # restart shell
 alias restart='exec $SHELL -l'
-
-# terraform parallel
-export TF_CLI_ARGS_plan="--parallelism=30"
-export TF_CLI_ARGS_apply="--parallelism=30"
