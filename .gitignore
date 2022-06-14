@@ -11,3 +11,5 @@
 !/README.md
 !.gitignore
 !/.bashrc
+!/init.sh
+!/install.sh
