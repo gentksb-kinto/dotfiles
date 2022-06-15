@@ -3,13 +3,12 @@
 /.**
 
 ### not ignore ###
+!/.devcontainer/devcontainer.json
+!/.devcontainer/Dockerfile
 !/.github/**
-!/module/**
-!/install/**
 !/.gitignore_global
 !/.gitconfig
 !/README.md
 !.gitignore
 !/.bashrc
-!/init.sh
 !/install.sh
