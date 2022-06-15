@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -xue
 sudo apt-get update
-sudo apt-get install -y direnv git
+sudo apt-get install -y direnv git curl
 rm -rf ~/.fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install
