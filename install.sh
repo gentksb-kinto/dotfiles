@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -ue
-sudo apt-get update
-sudo apt-get install -y direnv git
+apt-get update
+apt-get install -y direnv git
 
 link_to_homedir() {
   command echo "backup old dotfiles..."
