@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -xue
 sudo apt-get update
-sudo apt-get install -y direnv git
+sudo apt-get install -y direnv git fzf
 
 link_to_homedir() {
   command echo "backup old dotfiles..."
