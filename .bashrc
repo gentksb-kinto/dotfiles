@@ -126,5 +126,8 @@ stty stop undef
 # direnv
 eval "$(direnv hook bash)"
 
+# fzf
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
 # restart shell
 alias restart='exec $SHELL -l'
