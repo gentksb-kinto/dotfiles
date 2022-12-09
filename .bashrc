@@ -153,7 +153,7 @@ __bash_prompt
 
 ## for devcontainer ssh agent
 
-if [ -z "$SSH_AUTH_SOCK" ]; then
+if [ -z "$SSH_AUTH_SOCK" ] && [ -z "$REMOTE_CONTAINERS" ]; then
    # Check for a currently running instance of the agent
    RUNNING_AGENT="`ps -ax | grep 'ssh-agent -s' | grep -v grep | wc -l | tr -d '[:space:]'`"
    if [ "$RUNNING_AGENT" = "0" ]; then
