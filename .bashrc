@@ -119,10 +119,6 @@ fi
 # disable lock
 stty stop undef
 
-# tabtab source for packages
-# uninstall by removing these lines
-[ -f ~/.config/tabtab/__tabtab.bash ] && . ~/.config/tabtab/__tabtab.bash || true
-
 # direnv
 eval "$(direnv hook bash)"
 
@@ -168,3 +164,4 @@ if [ -z "$SSH_AUTH_SOCK" ]; then
 fi
 
 ssh-add $HOME/.ssh/id_ed25519
+a3ed06be25578d9654760ac53621187b3c4ac43
