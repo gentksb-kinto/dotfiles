@@ -1,6 +1,8 @@
 # dotfiles
 
-dotfiles, mostly for CodeSpaces
+takagen's dotfiles
+
+console theme by Codespaces default.
 
 ![init script test](https://github.com/gentksb/dotfiles/workflows/UbuntuCI/badge.svg)
 
