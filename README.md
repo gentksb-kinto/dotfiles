@@ -8,4 +8,4 @@ console theme by Codespaces default.
 
 ## How to use
 
-Automatically install them when Codespaces env is created.
+Automatically install them when Codespaces or VScode remote container is created.
