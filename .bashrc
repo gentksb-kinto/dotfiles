@@ -150,6 +150,3 @@ __bash_prompt() {
     unset -f __bash_prompt
 }
 __bash_prompt
-
-## restart
-source ~/.bashrc
