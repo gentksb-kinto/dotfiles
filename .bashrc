@@ -162,3 +162,9 @@ esac
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH=$BUN_INSTALL/bin:$PATH
+
+# wslu
+if [ -n "$WSL_DISTRO_NAME" ]; then
+    export BROWSER="wslview"
+    export DISPLAY=:0
+fi
