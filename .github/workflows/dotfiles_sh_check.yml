@@ -8,7 +8,10 @@ jobs:
     container: ubuntu:latest
     steps:
       - uses: actions/checkout@v1
-      - name: Install required base packege
-        run: apt update && apt install sudo
+      - name: Install required base package
+        run: |
+          DEBIAN_FRONTEND=noninteractive
+          apt-get update -y
+          apt-get install -y sudo
       - name: Install dotfiles
         run: ./install.sh
